@@ -1,18 +1,19 @@
-class LoginPage{
-    elements = {
-        btn_AddFavorite: () => cy.get(".ys-icons.ys-icons-grayStar"),
-        userName: () => cy.get('#UserName'),
-        password: () => cy.get('#password'),
-        loginButton: () => cy.get('#ys-fastlogin-button')
-    }
+const { type, clickElement } = require("./BasePage");
 
+//selector
+const userName = '#UserName';
+const password = '#password';
+const loginButton = '#ys-fastlogin-button';
+
+class LoginPage{
+    
     successLogin(){
-        
         cy.fixture('data').then((data) => {
-            this.elements.userName().type("yemeksepeticase@gmail.com")
-            this.elements.password().type(data.password)
+            type(userName,"yemeksepeticase@gmail.com")
+            type(password,data.password)
+           
         })
-        this.elements.loginButton().click()
+        clickElement(loginButton)
     }
 }
 

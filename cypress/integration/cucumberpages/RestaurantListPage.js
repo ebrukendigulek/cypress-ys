@@ -1,11 +1,13 @@
+const { refreshPage, isElementVisible, clickElement, closeJokerPopUpIfDisplayed } = require("./BasePage");
+
+//selector
+const btn_PopupClose = '#cboxClose';
+
 class RestaurantListPage{
-    elements = {
-        btn_PopupClose: () => cy.get("#cboxClose", {timeout: 10000})
-    }
 
     selectRandomRestaurant(){
-        cy.reload()
-        this.closeJokerPopUpIfDisplayed()
+        refreshPage
+        closeJokerPopUpIfDisplayed(btn_PopupClose)
         let restaurantName = ""
         function getRandomInt(min, max){      
             return Math.floor(Math.random() * (max - min + 1)) + min;    
@@ -29,10 +31,10 @@ class RestaurantListPage{
         
     }
 
-    closeJokerPopUpIfDisplayed(){
+    /*closeJokerPopUpIfDisplayed(){
         Cypress.on('uncaught:exception', (err, runnable) => {
-            if (this.elements.btn_PopupClose().should('be.visible')) {
-                this.elements.btn_PopupClose().click()
+            if (isElementVisible(cboxClose)) {
+                clickElement(cboxClose)
             }
           })
 
@@ -40,8 +42,9 @@ class RestaurantListPage{
                 this.elements.btn_PopupClose().should('be.visible').click()
         } catch (e) {
         }
-        return this*/
-    }
+        return this
+    }*/
+    
     
 }
 

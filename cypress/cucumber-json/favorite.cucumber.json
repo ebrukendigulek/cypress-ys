@@ -22,7 +22,7 @@
             "name": "User opens the city page",
             "result": {
               "status": "passed",
-              "duration": 4950000000
+              "duration": 4179000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "User choose city \"İstanbul\"",
             "result": {
               "status": "passed",
-              "duration": 4806000000
+              "duration": 3307000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "Dont show pop-ups with cookies",
             "result": {
               "status": "passed",
-              "duration": 98000000
+              "duration": 134000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "User logins from home page",
             "result": {
               "status": "passed",
-              "duration": 1195000000
+              "duration": 1189000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "User add restaurant to the favorites",
             "result": {
               "status": "passed",
-              "duration": 27057000000
+              "duration": 35754000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "User navigate to favorite page from homepage",
             "result": {
               "status": "passed",
-              "duration": 3183000000
+              "duration": 4237000000
             }
           },
           {
@@ -82,8 +82,8 @@
             "name": "User validates restaurant added to the favorites",
             "result": {
               "status": "failed",
-              "duration": 7662000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '[ <b>, 29 more... ]' to contain text 'sessionData', but the text was 'Kasaptan Burger, Şişli (Mecidiyeköy Mah.)Pidem, Beşiktaş (Levazım Mah.)Dolukaşık Ev Yemekleri, Kağıthane (Emniyetevleri Mah.)Mecidiyeköylü Ortaklar Kanat & Dürüm Evi, Şişli (Fulya Mah.)Pablo Artisan Coffee, Beşiktaş (Vişnezade Mah. - Akaretler)Olive\\'s Pizzeria, Beşiktaş (Nisbetiye Mah.)GirlBoss Burger, Beşiktaş (Levent Mah.)Kokoreççi Kenan Usta, Arnavutköy İlçesi (Anadolu Mah.)Oba İşkembe, Sultangazi (75.Yıl Mah.)Şerif Kokoreç & Şırdan, Sultangazi (Cebeci Mah.)Mersin Yaprak Tantuni, Esenyurt (Esenkent Mah.)Burger King, Arnavutköy İlçesi (Merkez Mah.)Hld Hatay Lavaş Döner, Başakşehir (Kayabaşı Mah. - Kayaşehir)Buum Burger, Sultangazi (75.Yıl Mah.)Köyüm İşkembe, Arnavutköy İlçesi (Merkez Mah.)Burger Maxi, Başakşehir (Güvercintepe Mah.)Kebapçı Alim, Küçükçekmece (Atakent Mah. - 1. İkitelli Cad. Bölgesi)Dürüm Max Zurna Dürüm, Arnavutköy İlçesi (Merkez Mah.)Hero\\'s Pizza, Arnavutköy İlçesi (Merkez Mah.)Route 66 Fastfood, Çatalca (Ferhatpaşa Mah.)1963 Faruk Koçer Döner, Şişli (Esentepe Mah. - Plazalar)Tatlı Krizi, Şişli (Gülbahar Mah. - Gülbağ)Sushi İstanbul, Beşiktaş (Ulus Mah.)Dürümcü Erhan, Avcılar (Yeşilkent Mah.)Sivas Pide, Arnavutköy İlçesi (Merkez Mah.)Ortaköy Kumpircisi, Arnavutköy İlçesi (Mustafa Kemal Paşa Mah.)Dürümzade, Arnavutköy İlçesi (Mustafa Kemal Paşa Mah.)Kebap 46\\'s, Arnavutköy İlçesi (Hadımköy Hastane Mah.)Antepli Ciğerci, Başakşehir (Bahçeşehir 2. Kısım Mah.)Şirazen Döner & Kebap, Arnavutköy İlçesi (Mustafa Kemal Paşa Mah.)'\n    + expected - actual\n\n    -'Kasaptan Burger, Şişli (Mecidiyeköy Mah.)Pidem, Beşiktaş (Levazım Mah.)Dolukaşık Ev Yemekleri, Kağıthane (Emniyetevleri Mah.)Mecidiyeköylü Ortaklar Kanat & Dürüm Evi, Şişli (Fulya Mah.)Pablo Artisan Coffee, Beşiktaş (Vişnezade Mah. - Akaretler)Olive\\'s Pizzeria, Beşiktaş (Nisbetiye Mah.)GirlBoss Burger, Beşiktaş (Levent Mah.)Kokoreççi Kenan Usta, Arnavutköy İlçesi (Anadolu Mah.)Oba İşkembe, Sultangazi (75.Yıl Mah.)Şerif Kokoreç & Şırdan, Sultangazi (Cebeci Mah.)Mersin Yaprak Tantuni, Esenyurt (Esenkent Mah.)Burger King, Arnavutköy İlçesi (Merkez Mah.)Hld Hatay Lavaş Döner, Başakşehir (Kayabaşı Mah. - Kayaşehir)Buum Burger, Sultangazi (75.Yıl Mah.)Köyüm İşkembe, Arnavutköy İlçesi (Merkez Mah.)Burger Maxi, Başakşehir (Güvercintepe Mah.)Kebapçı Alim, Küçükçekmece (Atakent Mah. - 1. İkitelli Cad. Bölgesi)Dürüm Max Zurna Dürüm, Arnavutköy İlçesi (Merkez Mah.)Hero\\'s Pizza, Arnavutköy İlçesi (Merkez Mah.)Route 66 Fastfood, Çatalca (Ferhatpaşa Mah.)1963 Faruk Koçer Döner, Şişli (Esentepe Mah. - Plazalar)Tatlı Krizi, Şişli (Gülbahar Mah. - Gülbağ)Sushi İstanbul, Beşiktaş (Ulus Mah.)Dürümcü Erhan, Avcılar (Yeşilkent Mah.)Sivas Pide, Arnavutköy İlçesi (Merkez Mah.)Ortaköy Kumpircisi, Arnavutköy İlçesi (Mustafa Kemal Paşa Mah.)Dürümzade, Arnavutköy İlçesi (Mustafa Kemal Paşa Mah.)Kebap 46\\'s, Arnavutköy İlçesi (Hadımköy Hastane Mah.)Antepli Ciğerci, Başakşehir (Bahçeşehir 2. Kısım Mah.)Şirazen Döner & Kebap, Arnavutköy İlçesi (Mustafa Kemal Paşa Mah.)'\n    +'sessionData'\n\n    at FavoritePage.checkFavoriteRestaurantInList (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:106:41)\n    at Context.eval (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:41:16)\n    at Context.resolveAndRunStepDefinition (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:1086:29)\n    at Context.eval (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:407:35)"
+              "duration": 4092000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<b>' to contain text 'sessionData', but the text was 'Mantı Dünyası, Sarıyer (Ayazağa Mah.)'\n    + expected - actual\n\n    -'Mantı Dünyası, Sarıyer (Ayazağa Mah.)'\n    +'sessionData'\n\n    at FavoritePage.checkFavoriteRestaurantInList (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:177:41)\n    at Context.eval (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:41:16)\n    at Context.resolveAndRunStepDefinition (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:1124:29)\n    at Context.eval (https://www.yemeksepeti.com/__cypress/tests?p=cypress/integration/features/favorite.feature:445:35)"
             },
             "embeddings": [
               {

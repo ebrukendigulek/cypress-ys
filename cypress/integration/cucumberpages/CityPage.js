@@ -1,19 +1,22 @@
+const { goToPage, clickElement, setBrowserCookie } = require("./BasePage")
+
+//selector
+const city = '[data-catalog="TR_ISTANBUL"] > .cityContainer > .plateNo';
+
 class CityPage{
-    elements = {
-
-    }
-
     openCityPage(){
-        cy.visit('https://www.yemeksepeti.com')
+        cy.fixture('data').then((data) => {
+            goToPage(data.yemeksepetiurl)
+        })
     }
 
     chooseCity(){
-        cy.get('[data-catalog="TR_ISTANBUL"] > .cityContainer > .plateNo').click()
+        clickElement(city)
     }
 
     addBrowserCookie(){
-        cy.setCookie("splashViewed", "true")
-        cy.setCookie("banabiPopoverShown","1") 
+        setBrowserCookie("splashViewed", "true")
+        setBrowserCookie("banabiPopoverShown","1") 
     }
 }
 

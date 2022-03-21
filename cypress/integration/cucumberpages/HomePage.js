@@ -1,27 +1,30 @@
-class HomePage{
-    elements = {
-        chooseRegion: () => cy.get('.col-md-4.form > .select2 > .selection > .select2-selection > .select2-selection__arrow'),
-        regionList: () => cy.get('.select2-results__option', {timeout: 10000}),
-        searchRestaurantButton: () => cy.get('.col-md-1 > .form-control'),
-        userInfoContainerButton: () => cy.get('.ys-user-info-container'),
-        goToMyFavorite: () => cy.get('.ys-userSettings > ul > :nth-child(4) > a'),
-    }
+const { clickElement } = require("./BasePage")
+
+//selector
+const chooseRegion = '.col-md-4.form > .select2 > .selection > .select2-selection > .select2-selection__arrow';
+const regionList = '.select2-results__option';
+const searchRestaurantButton = '.ys-icons.ys-icons-search.icon';
+const userInfoContainerButton = '.ys-user-info-container';
+const goToMyFavorite = ".ys-userSettings [href='/hesabim/favorilerim']";
+
+class HomePage {
 
     selectRegionByValue(regionName){
-        this.elements.chooseRegion().should('be.visible').click()
-        this.elements.regionList().contains(regionName).click()
+        clickElement(chooseRegion)
+        cy.get(regionList).contains(regionName).click()
     }
+
     clickRestaurantButton(){
-        this.elements.searchRestaurantButton().should('be.visible').click()
+        clickElement(searchRestaurantButton)
         cy.wait(5000)
     }
 
     openUserDetailContainer(){
-        this.elements.userInfoContainerButton().should('be.visible').click()
+        clickElement(userInfoContainerButton)
     }
 
     clickMyFavorite(){
-        this.elements.goToMyFavorite().should('be.visible').click()
+        clickElement(goToMyFavorite)
     }
 }
 

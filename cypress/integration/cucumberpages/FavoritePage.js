@@ -1,10 +1,9 @@
+const { refreshPage } = require("./BasePage")
+
 class FavoritePage{
-    elements = {
-        
-    }
 
     checkFavoriteRestaurantInList() {
-        cy.reload()
+        refreshPage
         const sessionData = cy.getSessionStorage('selectedRestaurantName')
         cy.log('selected restaurant' + sessionData)
         cy.get('.favorite-item>a>span>b')
