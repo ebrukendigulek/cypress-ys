@@ -1,0 +1,35 @@
+{
+  "name": "ys-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:tag": "cypress run -e TAGS='@FalseMail'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devdependencies": {
+    "cypress": "^9.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-parallel": "^0.9.0"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "cypress-parallel": "^0.9.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
