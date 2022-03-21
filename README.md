@@ -3,6 +3,7 @@
 ## Tools Used
 * Cypress
 * JavaScript
+* Cucumber
 * Mocha Reporter
 
 ## Prerequisites
